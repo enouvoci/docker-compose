@@ -1,5 +1,7 @@
 FROM docker/compose:1.24.0
 
-RUN apt-get install -y \
+RUN apk add --no-cache \
+        git \
         curl \
-        bash
+        bash \
+        openssh-client
